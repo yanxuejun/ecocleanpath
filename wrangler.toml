@@ -1,6 +1,6 @@
 name = "ecocleanpath-headless"
 compatibility_date = "2024-01-01"
-pages_build_output_dir = ".output"
+pages_build_output_dir = ".vercel/output/static"
 
 [vars]
 WOO_URL = "https://www.ecocleanpath.com/wp-json/wc/v3"
