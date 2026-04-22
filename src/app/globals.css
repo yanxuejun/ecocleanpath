@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2E7D32;
+  --color-primary-dark: #1B5E20;
+  --color-primary-light: #A5D6A7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  background: #f9fafb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Utility classes */
+.btn-primary {
+  @apply bg-primary-500 text-white px-5 py-2.5 rounded-lg font-medium transition-all hover:bg-primary-600 active:scale-95;
+}
+
+.btn-secondary {
+  @apply border border-primary-500 text-primary-500 px-5 py-2.5 rounded-lg font-medium transition-all hover:bg-primary-50 active:scale-95;
+}
+
+.input-field {
+  @apply w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all hover:shadow-md;
+}
+
+/* Skeleton loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  @apply bg-gray-200 rounded animate-pulse;
+}
+
+/* Mini cart dropdown */
+.mini-cart {
+  @apply absolute right-0 top-full mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-100 z-50;
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
