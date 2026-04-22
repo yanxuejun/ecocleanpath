@@ -9,7 +9,7 @@ import { getProducts, getCategories } from '@/lib/woocommerce';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: { default: 'EcoCleanPath - Robot Vacuum Accessories', template: '%s | EcoCleanPath' },
+  title: { default: 'ecocleanpath-headless', template: '%s | EcoCleanPath' },
   description: 'High-quality robot vacuum accessories and replacement parts. Compatible with Ecovacs, Roborock, Tineco, Bissell, Eufy, Karcher, Qihoo, and Shark.',
 };
 
